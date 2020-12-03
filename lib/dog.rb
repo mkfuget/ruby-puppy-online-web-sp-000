@@ -5,7 +5,7 @@ class Dog
   @@all = []
   def initialize(name)
     @name = name
-    @@all.push(self)
+    save
   end
   
   def self.all 
@@ -17,6 +17,10 @@ class Dog
       puts x.name
     end 
   end 
+  
+  def self.save 
+    @@all.push(self)
+  end
   
   def self.clear_all
     @@all.clear 
