@@ -4,4 +4,17 @@ class Dog
 
   @@all = []
   def initialize(name)
-    
+    @name = name
+    @@all.push(self)
+  end
+  
+  def all 
+    return @@all 
+  end 
+  
+  def print_all 
+    @@all.each do |x|
+      puts x.name
+    end 
+  end 
+end
