@@ -8,7 +8,7 @@ class Dog
     @@all.push(name)
   end
   
-  def self.all 
+  def self all 
     return @@all 
   end 
   
